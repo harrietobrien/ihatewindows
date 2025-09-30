@@ -38,7 +38,7 @@ for %%P in ("%CLASSIC1%" "%CLASSIC2%") do (
       )
     )
     if exist "Offline Address Book" (
-      echo   Moving "Offline Address Book" -> "%BACKUP_DIR%\Offline Address Book"
+      echo Moving "Offline Address Book" -> "%BACKUP_DIR%\Offline Address Book"
       move /y "Offline Address Book" "%BACKUP_DIR%\Offline Address Book" >nul
     )
     popd
@@ -48,8 +48,8 @@ for %%P in ("%CLASSIC1%" "%CLASSIC2%") do (
 
 echo.
 echo Done.
-echo - New Outlook cache deleted (rebuilds on next boot)
-echo - Classic cache files MOVED to: "%BACKUP_DIR%"
+echo - New Outlook cache deleted (rebuilds on reboot)
+echo - Classic cache files moved to: "%BACKUP_DIR%"
 echo.
 pause
 endlocal
